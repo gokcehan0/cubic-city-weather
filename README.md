@@ -58,7 +58,7 @@ The backend serves as the intelligent core of the ecosystem, managing data orche
 
   <h3>🏙️ AI City Visualization</h3>
   <p><i>An example of a dynamically generated cityscape reflecting local weather.</i></p>
-  <img src="./screenshots/screenshot2.png" width="500" alt="City View" style="border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+  <img src="./screenshots/screenshot2.png" width="400" alt="City View" style="border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
 </div>
 
 ---
