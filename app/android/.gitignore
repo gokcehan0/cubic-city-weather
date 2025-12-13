@@ -1,16 +1,13 @@
-# OSX
-#
-.DS_Store
-
-# Android/IntelliJ
-#
-build/
-.idea
-.gradle
-local.properties
+# Android specific ignores
 *.iml
-*.hprof
+.gradle/
+local.properties
+.idea/
 .cxx/
+*.hprof
+*.keystore
 
-# Bundle artifacts
-*.jsbundle
+# Build artifacts
+build/
+app/build/
+.externalNativeBuild
