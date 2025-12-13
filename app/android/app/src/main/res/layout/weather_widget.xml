@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E1E1E">
+
+    <ImageView
+        android:id="@+id/widget_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher"
+        android:contentDescription="Weather Background" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <!-- Title Removed -->
+
+        <LinearLayout
+            android:id="@+id/temp_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical">
+            
+            <TextView
+                android:id="@+id/widget_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--°"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:layout_marginTop="4dp"
+                android:shadowColor="#000000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2" />
+                
+            <ImageView
+                android:id="@+id/widget_icon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="-4dp"
+                android:src="@android:drawable/ic_menu_gallery"
+                android:scaleType="fitCenter"
+                android:visibility="visible" />
+        </LinearLayout>
+        
+        <TextView
+            android:id="@+id/widget_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/temp_container"
+            android:text="Loading..."
+            android:textColor="#DDDDDD"
+            android:textSize="12sp"
+            android:layout_marginTop="2dp"
+            android:layout_centerHorizontal="true"
+            android:shadowColor="#000000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2" />
+    </RelativeLayout>
+
+</RelativeLayout>
